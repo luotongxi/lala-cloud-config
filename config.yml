@@ -9,6 +9,10 @@ spring:
         git:
           uri: https://github.com/luotongxi/lala-cloud-config.git
 
+user:
+  username: luotong
+  password: 123456
+
 ---
 server:
   port: 16100
