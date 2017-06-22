@@ -5,13 +5,15 @@ spring:
   profiles: dev
   cloud:
     config:
+      discovery:
+        enabled: true
       server:
         git:
           uri: https://github.com/luotongxi/lala-cloud-config.git
 
 user:
   username: luotong
-  password: 123456
+  password: 111111
 
 ---
 server:
