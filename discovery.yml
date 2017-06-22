@@ -13,6 +13,9 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+person:
+  name: luotong
+  age: 25
       
 ---
 server:
@@ -30,3 +33,7 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      
+person:
+  name: luotong
+  age: 25
