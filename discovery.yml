@@ -14,7 +14,7 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 person:
-  name: guotao
+  name: langlang
   age: 25
       
 ---
