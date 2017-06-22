@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/luotongxi/lala-cloud-config.git
+          uri: https://github.com/luotongxi/lala-cloud-config
 
 ---
 server:
@@ -19,4 +19,4 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/luotongxi/lala-cloud-config.git
+          uri: https://github.com/luotongxi/lala-cloud-config
