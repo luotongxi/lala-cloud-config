@@ -10,7 +10,7 @@ eureka:
     perferIpAddress: true
   client:
     registerWithEureka: true
-    fetchRegistry: false
+    fetchRegistry: true
     serviceUrl:
       defaultZone: http://discovery:6702/eureka/
       
