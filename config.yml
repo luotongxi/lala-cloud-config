@@ -1,5 +1,5 @@
 server:
-  port: 16200
+  port: 6701
 
 spring:
   profiles: dev
@@ -27,7 +27,7 @@ user:
 
 ---
 server:
-  port: 16200
+  port: 6701
   
 spring:
   profiles: test
