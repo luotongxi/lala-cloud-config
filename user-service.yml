@@ -4,7 +4,7 @@ server:
 spring:
   profiles: dev
   
- eureka:
+eureka:
   instance:
     hostname: user-service
     perferIpAddress: true
@@ -21,7 +21,7 @@ server:
 spring:
   profiles: test
   
- eureka:
+eureka:
   instance:
     hostname: user-service
     perferIpAddress: true
