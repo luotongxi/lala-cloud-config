@@ -10,6 +10,16 @@ spring:
       server:
         git:
           uri: https://github.com/luotongxi/lala-cloud-config.git
+          
+eureka:
+  instance:
+    hostname: configserver
+    perferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://discovery:16200/eureka/
 
 user:
   username: luotong
@@ -17,7 +27,7 @@ user:
 
 ---
 server:
-  port: 16100
+  port: 16200
   
 spring:
   profiles: test
@@ -26,3 +36,13 @@ spring:
       server:
         git:
           uri: https://github.com/luotongxi/lala-cloud-config.git
+          
+eureka:
+  instance:
+    hostname: configserver
+    perferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://discovery:16200/eureka/
