@@ -1,5 +1,5 @@
 server:
-  port: 16300
+  port: 16200
   
 spring:
   profiles: dev
