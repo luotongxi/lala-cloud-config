@@ -1,0 +1,32 @@
+server:
+  port: 6703
+  
+spring:
+  profiles: dev
+  
+ eureka:
+  instance:
+    hostname: user-service
+    perferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://discovery:6701/eureka/
+      
+---
+server:
+  port: 6703
+  
+spring:
+  profiles: test
+  
+ eureka:
+  instance:
+    hostname: user-service
+    perferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://discovery:6701/eureka/
