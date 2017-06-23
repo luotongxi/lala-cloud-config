@@ -3,6 +3,10 @@ server:
   
 spring:
   profiles: dev
+  cloud:
+    config:
+      discovery:
+        enabled: true
   
 eureka:
   instance:
