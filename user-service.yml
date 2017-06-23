@@ -11,7 +11,7 @@ spring:
 eureka:
   instance:
     hostname: user-service
-    perferIpAddress: false
+    perferIpAddress: true
   client:
     registerWithEureka: true
     fetchRegistry: true
@@ -23,7 +23,11 @@ server:
   port: 6703
   
 spring:
-  profiles: test
+  profiles: dev
+  cloud:
+    config:
+      discovery:
+        enabled: true
   
 eureka:
   instance:
@@ -31,6 +35,6 @@ eureka:
     perferIpAddress: true
   client:
     registerWithEureka: true
-    fetchRegistry: false
+    fetchRegistry: true
     serviceUrl:
       defaultZone: http://discovery:6702/eureka/
