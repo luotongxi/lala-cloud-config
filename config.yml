@@ -19,7 +19,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://discovery:16200/eureka/
+      defaultZone: http://discovery:6702/eureka/
 
 user:
   username: luotong
@@ -45,4 +45,4 @@ eureka:
     registerWithEureka: true
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://discovery:16200/eureka/
+      defaultZone: http://discovery:6702/eureka/
