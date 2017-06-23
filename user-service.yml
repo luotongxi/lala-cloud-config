@@ -9,8 +9,8 @@ eureka:
     hostname: user-service
     perferIpAddress: true
   client:
-#    registerWithEureka: true
- #   fetchRegistry: true
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
       defaultZone: http://discovery:6702/eureka/
       
