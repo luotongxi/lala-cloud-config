@@ -10,7 +10,7 @@ spring:
 eureka:
   instance:
     hostname: discovery
-    perferIpAddress: true
+#    perferIpAddress: true
   client:
     registerWithEureka: false
     fetchRegistry: false
