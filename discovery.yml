@@ -11,15 +11,15 @@ eureka:
   instance:
     hostname: discovery
     perferIpAddress: true
-    leaseRenewalIntervalInSeconds: 10
+#    leaseRenewalIntervalInSeconds: 10
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-  server:
-    enableSelfPreservation: false
-    evictionIntervalTimerInMs: 5000
+#  server:
+ #   enableSelfPreservation: false
+  #  evictionIntervalTimerInMs: 5000
   
 person:
   name: langlang
