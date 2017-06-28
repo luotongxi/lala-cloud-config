@@ -12,15 +12,15 @@ eureka:
   instance:
     hostname: user-service
     perferIpAddress: true
-    lease-expiration-duration-in-seconds: 30 
-    lease-renewal-interval-in-seconds: 10
+#    lease-expiration-duration-in-seconds: 30 
+ #   lease-renewal-interval-in-seconds: 10
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://discovery:6702/eureka/
-    healthcheck:
-      enabled: true
+  #  healthcheck:
+   #   enabled: true
       
 ---
 server:
