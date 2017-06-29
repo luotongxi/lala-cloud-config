@@ -4,6 +4,12 @@ server:
 spring:
   profiles: dev
   
+  rabbitmq:
+    host: 127.0.0.1
+    port: 15672
+    username: guest
+    password: guest
+  
 user:
   name: gege
 ---
