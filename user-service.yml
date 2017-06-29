@@ -3,33 +3,9 @@ server:
   
 spring:
   profiles: dev
-  
-eureka:
-  instance:
-    hostname: user-service
-    perferIpAddress: true
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://discovery:6702/eureka/
 ---
 server:
   port: 6703
   
 spring:
   profiles: dev
-  cloud:
-    config:
-      discovery:
-        enabled: true
-  
-eureka:
-  instance:
-    hostname: user-service
-    perferIpAddress: true
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://discovery:6702/eureka/
