@@ -5,7 +5,7 @@ spring:
   profiles: dev
   
 user:
-  name: gege
+  name: kaka
 ---
 server:
   port: 6703
