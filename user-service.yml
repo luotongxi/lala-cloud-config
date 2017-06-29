@@ -1,11 +1,11 @@
 server:
-  port: 6703
+  port: 6704
   
 spring:
   profiles: dev
 ---
 server:
-  port: 6703
+  port: 6704
   
 spring:
   profiles: test
