@@ -3,6 +3,9 @@ server:
   
 spring:
   profiles: dev
+  
+user:
+  name: keke
 ---
 server:
   port: 6703
