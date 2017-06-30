@@ -1,0 +1,12 @@
+server:
+  port: 6704
+  
+spring:
+  profiles: dev
+  
+---
+server:
+  port: 6704
+  
+spring:
+  profiles: test
