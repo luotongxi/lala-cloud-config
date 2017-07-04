@@ -1,5 +1,5 @@
 server:
-  port: 6703
+  port: 1111
   
 spring:
   profiles: dev
