@@ -1,1 +1,12 @@
-
+server:
+  port: 6705
+  
+spring:
+  profiles: dev
+  
+---
+server:
+  port: 6705
+  
+spring:
+  profiles: test
