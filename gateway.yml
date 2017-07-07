@@ -6,9 +6,8 @@ spring:
   
 zuul:
   routes:
-    api-url:
-      path: /api-url/**
-      url:  http://user-service:6703/
+    users:
+      serviceId: user-service
   
 ---
 server:
