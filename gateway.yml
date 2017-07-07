@@ -4,6 +4,12 @@ server:
 spring:
   profiles: dev
   
+zuul:
+  routes:
+    api-url:
+      path: /api-url/**
+      url:  http://users-service:6703/
+  
 ---
 server:
   port: 6700
