@@ -8,7 +8,7 @@ zuul:
   routes:
     api-url:
       path: /api-url/**
-      url:  http://users-service:6703/
+      url:  http://user-service:6703/
   
 ---
 server:
