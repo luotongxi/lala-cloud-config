@@ -1,0 +1,12 @@
+server:
+  port: 6700
+  
+spring:
+  profiles: dev
+  
+---
+server:
+  port: 6700
+  
+spring:
+  profiles: test
