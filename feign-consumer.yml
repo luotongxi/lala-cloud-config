@@ -4,6 +4,14 @@ server:
 spring:
   profiles: dev
   
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+  
 ribbon:
   eureka:
     enabled: true
