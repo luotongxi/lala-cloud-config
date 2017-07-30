@@ -1,5 +1,5 @@
 server:
-  port: {random.int[10000,19999]}
+  port: ${random.int[10000,19999]}
   
 spring:
   profiles: dev
