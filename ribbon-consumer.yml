@@ -3,6 +3,11 @@ server:
   
 spring:
   profiles: dev
+ 
+# ribbon和eureka结合使用，客户端负载均衡，从服务中心获取服务列表
+ribbon:
+  eureka:
+    enabled: true
   
 ---
 server:
