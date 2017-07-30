@@ -4,6 +4,10 @@ server:
 spring:
   profiles: dev
   
+ribbon:
+  eureka:
+    enabled: true
+  
 ---
 server:
   port: 6705
