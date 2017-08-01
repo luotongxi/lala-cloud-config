@@ -11,7 +11,19 @@ endpoints:
     enabled: true
   health:
     sensitive: false
-  
+
+# 服务实例注册配置
+eureka:
+  instance:
+    hostname: user-service
+    perferIpAddress: true 
+    instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${random.int}
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:6702/eureka/
+    healthcheck:
+      enable: true
+      
 user:
   name: pingping
 ---
