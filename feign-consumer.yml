@@ -11,7 +11,19 @@ endpoints:
     enabled: true
   health:
     sensitive: false
-  
+
+# 服务注册配置
+eureka:
+  instance:
+    hostname: feign-consumer
+    perferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:6702/eureka/
+    healthcheck:
+      enable: true
+
+# 服务消费-客户端负载均衡配置，ribbon和erureka结合使用，从服务注册中心查找可调用服务
 ribbon:
   eureka:
     enabled: true
