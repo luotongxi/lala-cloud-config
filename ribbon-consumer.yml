@@ -3,6 +3,16 @@ server:
   
 spring:
   profiles: dev
+  
+# 服务注册配置
+eureka:
+  instance:
+    hostname: ribbon-consumer
+    perferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:6702/eureka/
+  
  
 # ribbon和eureka结合使用，客户端负载均衡，从服务中心获取服务列表
 ribbon:
