@@ -27,7 +27,7 @@ eureka:
     healthcheck:
       enable: true
       # 配置Eureka客户端拉取服务注册列表信息时间为10s，默认60，可以快速获取服务列表
-    registry-fetch-interval-seconds: 10  
+    registry-fetch-interval-seconds: 100  
 
 # 服务消费-客户端负载均衡配置，ribbon和erureka结合使用，从服务注册中心查找可调用服务
 ribbon:
