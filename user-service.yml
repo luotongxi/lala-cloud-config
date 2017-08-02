@@ -19,9 +19,9 @@ eureka:
     perferIpAddress: true 
     instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${random.int}
     # 心跳频率设置为15s，默认30s
-    lease-renewal-interval-in-seconds: 15
+    lease-renewal-interval-in-seconds: 30
     # 服务过期剔除时间设置为45s，默认90s，两次心跳时间间隔45s，服务就会剔除（即：服务状态为DOWN，Eureka Server将其剔除）
-    lease-expiration-duration-in-seconds: 45
+    lease-expiration-duration-in-seconds: 90
   client:
     serviceUrl:
       defaultZone: http://discovery:6702/eureka/
