@@ -26,7 +26,7 @@ eureka:
     serviceUrl:
       defaultZone: http://discovery:6702/eureka/
     healthcheck:
-      enable: true
+      enable: false
       
 user:
   name: pingping
