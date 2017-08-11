@@ -3,6 +3,12 @@ server:
   
 spring:
   profiles: dev
+  datasource:
+    name: gxb_core
+    url: jdbc:mysql://testdb-master:3306/gxb_core?useUnicode=true&characterEncoding=gbk&zeroDateTimeBehavior=convertToNull
+    username: test
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
   
 endpoints:
   restart:
