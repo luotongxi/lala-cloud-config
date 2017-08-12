@@ -16,6 +16,7 @@ eureka:
 zuul:
   routes:
     users:
+      path: user-api
       serviceId: user-service
   
 ---
