@@ -33,12 +33,3 @@ eureka:
       defaultZone: http://discovery:6702/eureka/
     healthcheck:
       enable: true
-      
-user:
-  name: pingping
----
-server:
-  port: 6703
-  
-spring:
-  profiles: test

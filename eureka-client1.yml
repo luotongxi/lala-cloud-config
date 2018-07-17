@@ -18,10 +18,3 @@ eureka:
 ribbon:
   eureka:
     enabled: true
-  
----
-server:
-  port: 6704
-  
-spring:
-  profiles: test

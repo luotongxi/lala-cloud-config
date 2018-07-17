@@ -33,10 +33,4 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 60000
-  
----
-server:
-  port: 6700
-  
-spring:
-  profiles: test
+
