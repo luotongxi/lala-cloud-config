@@ -1,28 +1,14 @@
 server:
-  port: 6703
+  port: 6704
   
 spring:
   profiles: dev
-  datasource:
-    name: lt_cloud
-    url: jdbc:mysql://127.0.0.1:3306/lt_cloud?useUnicode=true&characterEncoding=gbk&zeroDateTimeBehavior=convertToNull
-    username: root
-    password: 123456
-    driver-class-name: com.mysql.jdbc.Driver
-  
-endpoints:
-  restart:
-    enabled: true
-  shutdown:
-    enabled: true
-  health:
-    sensitive: false
 
 # 服务实例注册配置
 eureka:
   instance:
-    hostname: user-service
-    perferIpAddress: true 
+    hostname: service-A
+    perferIpAddress: true
     # instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${random.int}
     # 心跳频率设置为15s，默认30s
     lease-renewal-interval-in-seconds: 15
@@ -33,3 +19,9 @@ eureka:
       defaultZone: http://discovery:6702/eureka/
     healthcheck:
       enable: true
+  
+ 
+# ribbon和eureka结合使用，客户端负载均衡，从服务中心获取服务列表
+ribbon:
+  eureka:
+    enabled: true
